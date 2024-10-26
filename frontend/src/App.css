@@ -1,0 +1,121 @@
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: white;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.h3 {
+  text-align: center;
+  font-size: 26px;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #f3f4f6;
+  color: #111827;
+  outline: none;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9333ea;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #7e22ce;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6b7280;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  color: #f3f4f6;
+  transition: color 0.3s ease;
+}
+.icons :hover {
+  color: #e5e7eb;
+}
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; 
+  margin-top: 10px;
+}
+.completed-task {
+  text-decoration: line-through;
+  color: white;
+}
+button.save-button {
+  background-color: #4ade80; 
+}
+button.cancel-button {
+  background-color: #f87171;
+}
+button.save-button:hover,
+button.cancel-button:hover {
+  opacity: 0.9; 
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 60%;
+    outline: none;
+  }
+  button {
+    padding: 10px;
+    width: 26%;
+  }
+  li {
+    flex-direction: column;
+  }
+ .icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .button-container {
+    flex-direction: row; 
+    width: 100%;
+  }
+  .save-button, .cancel-button{
+    width: 45%;
+  }
+}
+
